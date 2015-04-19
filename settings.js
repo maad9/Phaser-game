@@ -1,12 +1,16 @@
 var GameSetup = (function () {
     function GameSetup() {
-        this.game = new Phaser.Game(800, 600, Phaser.Auto, 'content', { preload: this.preload, create: this.create });
+        this.game = new Phaser.Game(800, 600, Phaser.AUTO, 'content', { preload: this.preload, create: this.create });
     }
     GameSetup.prototype.preload = function () {
+        this.game.load.image('phaser', 'phaser.png');
     };
-    GameSetup.prototype.creare = function () {
+    GameSetup.prototype.create = function () {
+        var logo = this.game.add.sprite(this.game.world.centerX, this.game.world.centerY, 'phaser');
+        logo.anchor.setTo(0.5, 0.5);
     };
     return GameSetup;
 })();
 window.onload = function () {
+    var game = new GameSetup();
 };
