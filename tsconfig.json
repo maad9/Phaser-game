@@ -13,7 +13,7 @@
         "!./node_modules/**/*.ts"
     ],
     "files": [
-        "./phaser.d.ts",
+        "./phaser/phaser.d.ts",
         "./settings.ts"
     ]
 }
