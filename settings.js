@@ -3,13 +3,12 @@ var GameSetup = (function () {
         this.game = new Phaser.Game(800, 600, Phaser.AUTO, 'content', { preload: this.preload, create: this.create });
     }
     GameSetup.prototype.preload = function () {
-        this.game.load.image('phaser', 'graphics/phaser.png');
+        this.game.load.image("titleScreen", "graphics/0.png");
+        this.game.load.image("background", "graphics/17.png");
     };
     GameSetup.prototype.create = function () {
-        var logo = this.game.add.sprite(this.game.world.centerX, this.game.world.centerY, 'phaser');
-        logo.anchor.setTo(0.5, 0.5);
-        logo.scale.setTo(0.2, 0.2);
-        this.game.add.tween(logo.scale).to({ x: 1, y: 1 }, 2000, Phaser.Easing.Bounce.Out, true);
+        this.game.state.add("LevelSelectState", Game.LevelSelectState, true);
+        this.game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
     };
     return GameSetup;
 })();

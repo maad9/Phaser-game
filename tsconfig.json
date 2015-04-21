@@ -13,7 +13,9 @@
         "!./node_modules/**/*.ts"
     ],
     "files": [
+        "./LevelSelectState.ts",
         "./phaser/phaser.d.ts",
-        "./settings.ts"
+        "./settings.ts",
+        "./titleState.ts"
     ]
 }
