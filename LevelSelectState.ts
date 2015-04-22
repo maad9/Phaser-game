@@ -6,9 +6,9 @@ module Game{
 
         //sprites
         background: Phaser.Sprite;
-        //button_1: Phaser.Sprite;
+        button_1: Phaser.Sprite;
         //infoPanel: Phaser.Sprite;
-        //planet: Phaser.Sprite;
+        planet: Phaser.Sprite;
         //mineralPanel: Phaser.Sprite;
 
         constructor(){

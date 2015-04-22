@@ -11,7 +11,7 @@ class GameSetup{
         this.game.load.image("background", "graphics/17.png");
     }
     create(){
-        this.game.state.add("LevelSelectState",Game.LevelSelectState,true);
+        this.game.state.add("titleState",Game.TitleState,true);
         this.game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
     }
 }
