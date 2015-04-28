@@ -15,6 +15,7 @@ module Game{
             super();
         }
         create(){
+            //this.game.stage.backgroundColor = '#000000';
             this.background = this.add.sprite(0,0,"background");
         }
 

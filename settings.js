@@ -7,7 +7,7 @@ var GameSetup = (function () {
         this.game.load.image("background", "graphics/17.png");
     };
     GameSetup.prototype.create = function () {
-        this.game.state.add("titleState", Game.TitleState, true);
+        this.game.state.add("LevelSelectState", Game.LevelSelectState, true);
         this.game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
     };
     return GameSetup;
